@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDPA Test Charts Platform</title>
+
+</head>
+<body>
+  <style>
+    .chart-container {
+      min-height: 530px;
+    }
+    </style>
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  
+  <div id="age" class="chart-container"></div>
+  <div id="gender" class="chart-container"></div>
+
+  <script> 
+  let age = {
+      type: "ring",
+      backgroundColor:'transparent',
+      title: {
+        text: "Altersgruppen",
+        fontFamily: "Lato"
+      },
+      plot: {
+        valueBox: {
+          placement: 'out',
+          text: '%t\n%npv%',
+          fontFamily: "Montserrat"
+        },
+        tooltip:{
+          fontSize: '14',
+          fontFamily: "Montserrat",
+          padding: "5 10"
+        },
+        animation: {
+          effect: 5,
+          method: 1,
+          sequence: 1,
+          speed: 1
+        }
+      },
+      series: [
+      {        
+        values:[3],
+        text: "< 16 jährig"
+      },
+      {        
+        values:[21],
+        text: "16 - 18 jährig"
+      },
+      {        
+        values:[40],
+        text: "19 - 26 jährig"
+      },
+      {        
+        values:[45],
+        text: "27 - 40 jährig"
+      },
+      {        
+        values:[36],
+        text: "41 - 60 jährig"
+      },
+      {        
+        values:[5],
+        text: "> 60 jährig"
+      }
+    ]
+  };
+  let gender = {
+      type: "ring",
+      backgroundColor:'transparent',
+      title: {
+        text: "Geschlecht",
+        fontFamily: "Lato"
+      },
+      plot: {
+        valueBox: {
+          placement: 'out',
+          text: '%t\n%npv%',
+          fontFamily: "Montserrat"
+        },
+        tooltip:{
+          fontSize: '14',
+          fontFamily: "Montserrat",
+          padding: "5 10"
+        },
+        animation: {
+          effect: 5,
+          method: 1,
+          sequence: 1,
+          speed: 1
+        }
+      },
+      series: [
+        {        
+        values: [95],
+        text: "männlich"
+      },
+      {        
+        values:[55],
+        text: "weiblich"
+      }
+    ]
+  };
+    
+  zingchart.render({
+    id: 'age',
+    data: age,
+  })
+  zingchart.render({
+    id: 'gender',
+    data: gender,
+  })
+  </script>
+</body>
+</html>

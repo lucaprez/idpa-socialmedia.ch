@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDPA Test Charts</title>
+    <title>IDPA Test Charts Reasons</title>
 
 </head>
 <body>
@@ -25,11 +25,7 @@
   <div id="age46to50-chart" class="chart-container"></div>
   <div id="age51to55-chart" class="chart-container"></div>
   <div id="age56to60-chart" class="chart-container"></div>
-  <div id="age61to65-chart" class="chart-container"></div>
-  <div id="age66to70-chart" class="chart-container"></div>
-  <div id="age71to75-chart" class="chart-container"></div>
-  <div id="age76to80-chart" class="chart-container"></div>
-  <div id="age81to100-chart" class="chart-container"></div>
+  <div id="age61to100-chart" class="chart-container"></div>
 
   <script> 
   let age11to15 = {
@@ -672,11 +668,11 @@
       }
     ]
   };
-  let age61to65 = {
+  let age61to100 = {
       type: "ring",
       backgroundColor:'transparent',
       title: {
-        text: "61 bis 65 Jahre",
+        text: "61 Jahre und älter",
         fontFamily: "Lato"
       },
       plot: {
@@ -699,7 +695,7 @@
       },
       series: [
         {        
-        values: [1],
+        values: [2],
         text: "Unterhaltung"
       },
       {        
@@ -711,147 +707,19 @@
         text: "Zeitvertreib"
       },
       {        
-        values:[0],
+        values:[1],
         text: "Bildung"
       },
       {        
-        values:[1],
+        values:[5],
         text: "Aktualität/News"
       },
       {        
         values:[0],
         text: "Inspiration"
-      },
-      {        
-        values:[1],
-        text: "Hilfeleistungen"
-      },
-      {        
-        values:[1],
-        text: "Aufmerksamkeit"
-      },
-      {        
-        values:[1],
-        text: "aus Beruflichen Gründen"
-      }
-    ]
-  };
-  let age66to70 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "66 bis 70 Jahre",
-        fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
-        animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
-        }
-      },
-      series: [
-        {        
-        values: [0],
-        text: "Unterhaltung"
-      },
-      {        
-        values:[0],
-        text: "Ablenkung"
-      },
-      {        
-        values:[0],
-        text: "Zeitvertreib"
-      },
-      {        
-        values:[0],
-        text: "Bildung"
-      },
-      {        
-        values:[0],
-        text: "Aktualität/News"
-      },
-      {        
-        values:[0],
-        text: "Inspiration"
-      },
-      {        
-        values:[0],
-        text: "Hilfeleistungen"
-      },
-      {        
-        values:[0],
-        text: "Aufmerksamkeit"
-      },
-      {        
-        values:[0],
-        text: "aus Beruflichen Gründen"
-      }
-    ]
-  };
-  let age71to75 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "71 bis 75 Jahre",
-        fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
-        animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
-        }
-      },
-      series: [
-        {        
-        values: [1],
-        text: "Unterhaltung"
-      },
-      {        
-        values:[0],
-        text: "Ablenkung"
-      },
-      {        
-        values:[0],
-        text: "Zeitvertreib"
-      },
-      {        
-        values:[1],
-        text: "Bildung"
       },
       {        
         values:[2],
-        text: "Aktualität/News"
-      },
-      {        
-        values:[0],
-        text: "Inspiration"
-      },
-      {        
-        values:[1],
         text: "Hilfeleistungen"
       },
       {        
@@ -859,135 +727,7 @@
         text: "Aufmerksamkeit"
       },
       {        
-        values:[0],
-        text: "aus Beruflichen Gründen"
-      }
-    ]
-  };
-  let age76to80 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "76 bis 80 Jahre",
-        fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
-        animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
-        }
-      },
-      series: [
-        {        
-        values: [0],
-        text: "Unterhaltung"
-      },
-      {        
-        values:[0],
-        text: "Ablenkung"
-      },
-      {        
-        values:[0],
-        text: "Zeitvertreib"
-      },
-      {        
-        values:[0],
-        text: "Bildung"
-      },
-      {        
         values:[1],
-        text: "Aktualität/News"
-      },
-      {        
-        values:[0],
-        text: "Inspiration"
-      },
-      {        
-        values:[0],
-        text: "Hilfeleistungen"
-      },
-      {        
-        values:[0],
-        text: "Aufmerksamkeit"
-      },
-      {        
-        values:[0],
-        text: "aus Beruflichen Gründen"
-      }
-    ]
-  };
-  let age81to100 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "80 Jahre und älter",
-        fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
-        animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
-        }
-      },
-      series: [
-        {        
-        values: [0],
-        text: "Unterhaltung"
-      },
-      {        
-        values:[0],
-        text: "Ablenkung"
-      },
-      {        
-        values:[0],
-        text: "Zeitvertreib"
-      },
-      {        
-        values:[0],
-        text: "Bildung"
-      },
-      {        
-        values:[1],
-        text: "Aktualität/News"
-      },
-      {        
-        values:[0],
-        text: "Inspiration"
-      },
-      {        
-        values:[0],
-        text: "Hilfeleistungen"
-      },
-      {        
-        values:[0],
-        text: "Aufmerksamkeit"
-      },
-      {        
-        values:[0],
         text: "aus Beruflichen Gründen"
       }
     ]
@@ -1034,24 +774,8 @@
     data: age56to60,
   })
   zingchart.render({
-    id: 'age61to65-chart',
-    data: age61to65,
-  })
-  zingchart.render({
-    id: 'age66to70-chart',
-    data: age66to70,
-  })
-  zingchart.render({
-    id: 'age71to75-chart',
-    data: age71to75,
-  })
-  zingchart.render({
-    id: 'age76to80-chart',
-    data: age76to80,
-  })
-  zingchart.render({
-    id: 'age81to100-chart',
-    data: age81to100,
+    id: 'age61to100-chart',
+    data: age61to100,
   })
 
   </script>
