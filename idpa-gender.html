@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDPA Test Charts Platform</title>
+
+</head>
+<body>
+  <style>
+    .chart-container {
+      min-height: 530px;
+    }
+    </style>
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  
+  <div id="platformsmen-chart" class="chart-container"></div>
+  <div id="platformswomen-chart" class="chart-container"></div>
+  <div id="reasonsmen-chart" class="chart-container"></div>
+  <div id="reasonswomen-chart" class="chart-container"></div>
+  <!-- <div id="age16to20-chart" class="chart-container"></div> -->
+  <script>  
+    var mencounts = [89, 85, 68, 54, 36, 27, 20, 16, 9, 6, 1] ;
+    let platformsmen = {
+        type: 'bar',
+    title: {
+        text: 'Plattformnutzung Männer',
+        fontFamily: "Lato"
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest', 'Tumlr'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
+        animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
+        }
+    },
+    series: [
+        {
+        values: mencounts
+        }
+    ]
+    }
+
+    zingchart.render({
+        id: 'platformsmen-chart',
+        data: platformsmen,
+    })
+
+  </script>
+  <script>  
+    var womenscount = [96, 80, 60, 35, 35, 18, 18, 16, 5, 2] ;
+    let platformswomen = {
+        type: 'bar',
+    title: {
+        text: 'Plattformnutzung Frauen',
+        fontFamily: "Lato"
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'Pinterest', 'Snapchat', 'TikTok', 'LinkedIn', 'Telegram', 'Skype', 'Reddit'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
+        animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
+        }
+    },
+    series: [
+        {
+        values: womenscount
+        }
+    ]
+    }
+
+    zingchart.render({
+        id: 'platformswomen-chart',
+        data: platformswomen,
+    })
+
+  </script>
+  <script>  
+    var menreasonscounts = [91, 69, 51, 42, 38, 31, 31, 17, 4] ;
+    let reasonsmen = {
+        type: 'bar',
+    title: {
+        text: 'Nutzungsgründe Männer',
+        fontFamily: "Lato"
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['Unterhaltung', 'Aktualität/News', 'Zeitvertrieb', 'Bildung', 'Inspiration', 'Aus beruflichen Gründen', 'Ablenkung', 'Hilfeleistung', 'Aufmerksamkeit'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
+        animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
+        }
+    },
+    series: [
+        {
+        values: menreasonscounts
+        }
+    ]
+    }
+
+    zingchart.render({
+        id: 'reasonsmen-chart',
+        data: reasonsmen,
+    })
+
+  </script>
+  <script>  
+    var womenreasonscounts = [89, 55, 49, 49, 47, 24, 18, 7, 7] ;
+    let reasonswomen = {
+        type: 'bar',
+    title: {
+        text: 'Nutzungsgründe Frauen',
+        fontFamily: "Lato"
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['Unterhaltung', 'Inspiration', "Aktualität/News", 'Zeitvertrieb', 'Bildung', 'Ablenkung', 'Hilfeleistung', 'Aufmerksamkeit', 'Aus beruflichen Gründen'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
+        animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
+        }
+    },
+    series: [
+        {
+        values: womenreasonscounts
+        }
+    ]
+    }
+
+    zingchart.render({
+        id: 'reasonswomen-chart',
+        data: reasonswomen,
+    })
+
+  </script>
+
+
+</body>
