@@ -21,17 +21,17 @@
   <div id="reasonswomen-chart" class="chart-container"></div>
   <!-- <div id="age16to20-chart" class="chart-container"></div> -->
   <script>  
-    var mencounts = [89, 85, 68, 54, 36, 27, 20, 16, 9, 6, 1]
+    var mencounts = [89, 85, 68, 54, 36, 27, 24, 24, 20, 16, 9, 6, 1]
     let platformsmen = {
         type: 'bar',
         backgroundColor:'transparent',
     title: {
         text: 'Plattformnutzung Männer',
-        fontFamily: "Lato"
+        fontFamily: "Montserrat"
     },
     scaleX: {
         label: { text: 'Plattformen' },
-        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest', 'Tumblr'],
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Facebook', 'Twitter', 'Reddit', 'Telegram', 'Skype', 'Pinterest', 'Tumblr'],
     },
     scaleY: {
         label: { text: 'Anteil in Prozent' }
@@ -56,17 +56,17 @@
         data: platformsmen,
     })
  
-    var womenscount = [96, 80, 60, 35, 35, 18, 18, 16, 5, 2] ;
+    var womenscount = [96, 80, 60, 35, 35, 33, 18, 18, 16, 5, 5, 2] ;
     let platformswomen = {
         type: 'bar',
         backgroundColor:'transparent',
     title: {
         text: 'Plattformnutzung Frauen',
-        fontFamily: "Lato"
+        fontFamily: "Montserrat"
     },
     scaleX: {
         label: { text: 'Plattformen' },
-        labels: ['WhatsApp', 'YouTube', 'Instagram', 'Pinterest', 'Snapchat', 'TikTok', 'LinkedIn', 'Telegram', 'Skype', 'Reddit'],
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'Pinterest', 'Snapchat', 'Facebook', 'TikTok', 'LinkedIn', 'Telegram', 'Twitter', 'Skype', 'Reddit'],
     },
     scaleY: {
         label: { text: 'Anteil in Prozent' }
@@ -97,7 +97,7 @@
         backgroundColor:'transparent',
     title: {
         text: 'Nutzungsgründe Männer',
-        fontFamily: "Lato"
+        fontFamily: "Montserrat"
     },
     scaleX: {
         label: { text: 'Plattformen' },
@@ -125,16 +125,14 @@
         id: 'reasonsmen-chart',
         data: reasonsmen,
     })
-
-  </script>
-  <script>  
+ 
     var womenreasonscounts = [89, 55, 49, 49, 47, 24, 18, 7, 7] ;
     let reasonswomen = {
         type: 'bar',
         backgroundColor:'transparent',
     title: {
         text: 'Nutzungsgründe Frauen',
-        fontFamily: "Lato"
+        fontFamily: "Montserrat"
     },
     scaleX: {
         label: { text: 'Plattformen' },
