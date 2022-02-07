@@ -17,6 +17,7 @@
     
     <div id="age" class="chart-container"></div>
     <div id="gender" class="chart-container"></div>
+    <div id="usage-chart" class="chart-container"></div>
 
   <script> 
   let age = {
@@ -116,6 +117,43 @@
     id: 'gender',
     data: gender,
   })
+  var usagetime = [1.50, 3.00, 3.45, 2.92, 3.05, 2.05, 2.55, 1.29, 1.67, 1.80] ;
+    let usage = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Handynutzung 11 bis 15 Jährig',
+        fontFamily: "Lato"
+    },
+    scaleX: {
+        label: { text: 'Altersgruppen in Jahren' },
+        labels: ['Unter 16', '16 - 20', '21 - 25', '26 - 30', '31 - 35', '36 - 40', '41 - 45', '46 - 50', '51 - 55', 'Über 55'],
+    },
+    scaleY: {
+        label: { text: 'Nutzungszeit in Stunden' }
+    },
+    plot: {
+        animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
+        }
+    },
+    series: [
+        {
+        values: usagetime
+        }
+    ]
+    }
+
+    
+  zingchart.render({
+    id: 'usage-chart',
+    data: usage,
+  })
+
+
   </script>
 </body>
 </html>

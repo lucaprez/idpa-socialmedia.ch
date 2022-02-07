@@ -26,599 +26,299 @@
   <div id="age51to55-chart" class="chart-container"></div>
   <div id="age61to100-chart" class="chart-container"></div>
 
-  <script> 
-  let age11to15 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "11 bis 15 Jahre",
+  <script>
+    var age11to15count = [100, 100, 67, 0, 100, 67, 0, 0, 0, 67] ;
+    let age11to15 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 11 bis 15 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+      label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values:[2],
-        text: "Instagram"
-      },
-      {        
-        values:[3],
-        text: "Snapchat"
-      },
-      {        
-        values:[2],
-        text: "TikTok"
-      },
-      {        
-        values:[2],
-        text: "Pinterest"
-      },
-      {        
-        values:[3],
-        text: "YouTube",
-      },
-      {        
-        values:[3],
-        text: "WhatsApp"
-      },
+    },
+    series: [
+        {
+        values: age11to15count
+        }
     ]
-  };
-  let age16to20 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "16 bis 20 Jahre",
+    };
+    
+    var age16to20count = [91, 82, 96, 27, 89, 49, 20, 18, 13, 20] ;
+    let age16to20 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 16 bis 20 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [43],
-        text: "Instagram"
-      },
-      {        
-        values:[40],
-        text: "Snapchat"
-      },
-      {        
-        values:[22],
-        text: "TikTok"
-      },
-      {        
-        values:[12],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Tumblr"
-      },
-      {        
-        values:[6],
-        text: "Skype"
-      },
-      {        
-        values:[8],
-        text: "Telegram"
-      },
-      {        
-        values:[9],
-        text: "Pinterest",
-      },
-      {        
-        values:[37],
-        text: "YouTube"
-      },
-      {        
-        values:[41],
-        text: "WhatsApp"
-      },
-      {        
-        values:[9],
-        text: "Reddit"
-      }
+    },
+    series: [
+        {
+        values: age16to20count
+        }
     ]
-  };
-  let age21to25 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "21 bis 25 Jahre",
+    }
+    var age21to25count = [91, 100, 73, 36, 45, 27, 45, 9, 0, 0] ;
+    let age21to25 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 21 bis 25 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [8],
-        text: "Instagram"
-      },
-      {        
-        values:[5],
-        text: "Snapchat"
-      },
-      {        
-        values:[3],
-        text: "TikTok"
-      },
-      {        
-        values:[4],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Telegram"
-      },
-      {        
-        values:[11],
-        text: "YouTube"
-      },
-      {        
-        values:[10],
-        text: "WhatsApp"
-      },
-      {        
-        values:[5],
-        text: "Reddit"
-      }
+    },
+    series: [
+        {
+        values: age21to25count
+        }
     ]
-  };
-  let age26to30 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "26 bis 30 Jahre",
+    }
+    var age26to30count = [90, 90, 70, 55, 15, 10, 10, 10, 10, 20] ;
+    let age26to30 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 26 bis 30 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [14],
-        text: "Instagram"
-      },
-      {        
-        values:[3],
-        text: "Snapchat"
-      },
-      {        
-        values:[2],
-        text: "TikTok"
-      },
-      {        
-        values:[11],
-        text: "LinkedIn"
-      },
-      {        
-        values:[2],
-        text: "Skype"
-      },
-      {        
-        values:[2],
-        text: "Telegram"
-      },
-      {        
-        values:[4],
-        text: "Pinterest"
-      },
-      {        
-        values:[18],
-        text: "YouTube",
-      },
-      {        
-        values:[18],
-        text: "WhatsApp"
-      },
-      {        
-        values:[2],
-        text: "Reddit"
-      }
+    },
+    series: [
+        {
+        values: age26to30count
+        }
     ]
-  };
-  let age31to35 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "31 bis 35 Jahre",
+    }
+    var age31to35count = [90, 80, 80, 60, 10, 10, 10, 0, 10, 30] ;
+    let age31to35 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 31 bis 35 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [8],
-        text: "Instagram"
-      },
-      {        
-        values:[1],
-        text: "Snapchat"
-      },
-      {        
-        values:[1],
-        text: "TikTok"
-      },
-      {        
-        values:[6],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Skype"
-      },
-      {        
-        values:[3],
-        text: "Pinterest"
-      },
-      {        
-        values:[8],
-        text: "YouTube",
-      },
-      {        
-        values:[9],
-        text: "WhatsApp"
-      },
-      {        
-        values:[1],
-        text: "Reddit"
-      },
+    },
+    series: [
+        {
+        values: age31to35count
+        }
     ]
-  };
-  let age36to40 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "36 bis 40 Jahre",
+    }
+    var age36to40count = [90, 85, 35, 50, 0, 10, 5, 30, 0, 15] ;
+    let age36to40 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 36 bis 40 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [7],
-        text: "Instagram"
-      },
-      {        
-        values:[2],
-        text: "TikTok"
-      },
-      {        
-        values:[10],
-        text: "LinkedIn"
-      },
-      {        
-        values:[6],
-        text: "Telegram"
-      },
-      {        
-        values:[3],
-        text: "Pinterest",
-      },
-      {        
-        values:[17],
-        text: "YouTube"
-      },
-      {        
-        values:[18],
-        text: "WhatsApp"
-      },
-      {        
-        values:[1],
-        text: "Reddit"
-      }
+    },
+    series: [
+        {
+        values: age36to40count
+        }
     ]
-  };
-  let age41to45 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "41 bis 45 Jahre",
+    }
+    var age41to45count = [86, 71, 50, 57, 0, 14, 7, 21, 7, 0] ;
+    let age41to45 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 41 bis 45 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [7],
-        text: "Instagram"
-      },
-      {        
-        values:[2],
-        text: "TikTok"
-      },
-      {        
-        values:[8],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Skype"
-      },
-      {        
-        values:[3],
-        text: "Telegram"
-      },
-      {        
-        values:[10],
-        text: "YouTube",
-      },
-      {        
-        values:[12],
-        text: "WhatsApp"
-      },
-      {        
-        values:[1],
-        text: "Reddit"
-      }
+    },
+    series: [
+        {
+        values: age41to45count
+        }
     ]
-  };
-  let age46to50 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "46 bis 50 Jahre",
+    }
+    var age46to50count = [100, 79, 47, 42, 5, 11, 5, 21, 0, 16] ;
+    let age46to50 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 46 bis 50 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-        {        
-        values: [9],
-        text: "Instagram"
-      },
-      {        
-        values:[1],
-        text: "Snapchat"
-      },
-      {        
-        values:[2],
-        text: "TikTok"
-      },
-      {        
-        values:[8],
-        text: "LinkedIn"
-      },
-      {        
-        values:[4],
-        text: "Telegram"
-      },
-      {        
-        values:[3],
-        text: "Pinterest"
-      },
-      {        
-        values:[15],
-        text: "YouTube",
-      },
-      {        
-        values:[19],
-        text: "WhatsApp"
-      },
-      {        
-        values:[1],
-        text: "Reddit"
-      },
+    },
+    series: [
+        {
+        values: age46to50count
+        }
     ]
-  };
-  let age51to55 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "51 bis 55 Jahre",
+    }
+    var age51to55count = [100, 100, 0, 33, 0, 0, 0, 0, 33, 33] ;
+    let age51to55 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung 51 bis 55 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-      {        
-        values:[1],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Skype"
-      },
-      {        
-        values:[1],
-        text: "Pinterest"
-      },
-      {        
-        values:[3],
-        text: "YouTube",
-      },
-      {        
-        values:[3],
-        text: "WhatsApp"
-      },
+    },
+    series: [
+        {
+        values: age51to55count
+        }
     ]
-  };
-  let age61to100 = {
-      type: "ring",
-      backgroundColor:'transparent',
-      title: {
-        text: "61 Jahre und älter",
+    }
+    var age61to100count = [100, 60, 0, 20, 0, 0, 0, 0, 20, 0] ;
+    let age61to100 = {
+        type: 'bar',
+        backgroundColor:'transparent',
+    title: {
+        text: 'Plattformnutzung über 61 jährig',
         fontFamily: "Lato"
-      },
-      plot: {
-        valueBox: {
-          placement: 'out',
-          text: '%t\n%npv%',
-          fontFamily: "Montserrat"
-        },
-        tooltip:{
-          fontSize: '14',
-          fontFamily: "Montserrat",
-          padding: "5 10"
-        },
+    },
+    scaleX: {
+        label: { text: 'Plattformen' },
+        labels: ['WhatsApp', 'YouTube', 'Instagram', 'LinkedIn', 'Snapchat', 'TikTok', 'Reddit', 'Telegram', 'Skype', 'Pinterest'],
+    },
+    scaleY: {
+        label: { text: 'Anteil in Prozent' }
+    },
+    plot: {
         animation: {
-          effect: 5,
-          method: 1,
-          sequence: 1,
-          speed: 1
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 450,
         }
-      },
-      series: [
-      {        
-        values:[1],
-        text: "LinkedIn"
-      },
-      {        
-        values:[1],
-        text: "Skype"
-      },
-      {        
-        values:[3],
-        text: "YouTube",
-      },
-      {        
-        values:[5],
-        text: "WhatsApp"
-      },
+    },
+    series: [
+        {
+        values: age61to100count
+        }
     ]
-  };
+    }
+
     
   zingchart.render({
     id: 'age11to15-chart',
